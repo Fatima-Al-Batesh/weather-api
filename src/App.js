@@ -24,9 +24,11 @@ class App extends Component {
         <SayHi />
         <SayHello color="black" name={this.state.name} />
         <Search handleInput={this.handleInputChange} />
+        <h1>Fatima Al-Batesh</h1>
       </div>
     );
   }
+  
 }
 
 export default App;
