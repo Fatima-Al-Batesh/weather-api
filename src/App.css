@@ -22,7 +22,7 @@ body{
   margin-top: 0px;
   padding: 10px;
   height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   background-color: #759EDA;
 }
 
@@ -45,9 +45,13 @@ button{
   text-align: center;
   padding-bottom:20px;
 }
+.content img{
+  width:150px;
+  height:150px;
+}
 .content{
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display:grid;
   grid-template-columns: 3fr;
   grid-template-rows: 3fr 1fr 1fr;
@@ -78,10 +82,21 @@ button{
   list-style: none;
   display:flex;
   justify-content: center;
+  margin-bottom:50px;
 }
 time{
   padding-bottom:15px;
+  margin: 0 auto;
 }
+p{
+  margin: 0 auto;
+  padding-top:15px;
+}
+li img{
+  width:80px;
+  height:80px;
+}
+
 /*hourly weather css*/
 /*.app__header,
 .app__main {
