@@ -81,6 +81,7 @@ button{
 .hour-weather-t{
   list-style: none;
   display:flex;
+  flex-wrap:wrap;
   justify-content: center;
   margin-bottom:50px;
 }
@@ -117,13 +118,6 @@ li img{
 div {
   border:none;
 }
-@media only screen and (max-width: 582px) {
-  .app{
-    font-size: small;
-    margin: 0px;
-  }
-  .hour-weather-t{
-    
-    flex-wrap:wrap;
-  }
-}
+
+
+

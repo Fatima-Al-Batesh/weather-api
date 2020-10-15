@@ -10,12 +10,11 @@ class Search extends React.Component {
   render() {
     return (
       <div className="header" >
+        <form onSubmit={this.props.getData}>
         <input
           type="text"
           id="input-name"
-          onChange={event => {
-            this.setState({ input: event.target.value });
-          }}
+          name="city"
         />
         <button
           onClick={event => {
@@ -24,6 +23,7 @@ class Search extends React.Component {
         >
           FIND WEATHER
         </button>
+        </form>
       </div>
     );
   }
