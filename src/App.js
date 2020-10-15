@@ -55,8 +55,8 @@ class App extends Component {
   temp:Math.floor(data.list[1].main.temp-273.15),
   temp_min:Math.floor(data.list[1].main.temp_min-273.15),
   temp_max:Math.floor(data.list[1].main.temp_max-273.15),
-  pressure:Math.floor(data.list[1].main.pressure),
-  humidity:Math.floor(data.list[1].main.humidity),
+  pressure:data.list[1].main.pressure,
+  humidity:data.list[1].main.humidity,
   description:data.list[1].weather[0].description,
   id:data.list[1].weather[0].id,
   status:true,
@@ -79,9 +79,13 @@ class App extends Component {
       return <img src={rain} alt="rain icon" />
     }if(id >= 600 && id <= 699){
       return <img src={snow} alt="snow icon" />
+    }if(id >= 700 && id <= 799){
+      return <img src={fog} alt="fog icon" />
     }if(id == 800){
       return <img src={clear} alt="clear icon" />
-    }if(id <= 801 && id <= 805){
+    }if(id == 801){
+      return <img src={partlycloudy} alt="partlycloudy icon" />
+    }if(id >= 801 && id <= 805){
       return <img src={mostlycloudy} alt="mostlycloudy icon" />
     }
 

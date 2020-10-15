@@ -11,7 +11,7 @@ export default function  WeatherNow (props)
 {
 const {temp_min,temp_max,humidity,pressure,id,description}=props.api;
   
-  
+  console.log(id);
     
     return (
       <main className="content">
@@ -28,7 +28,7 @@ const {temp_min,temp_max,humidity,pressure,id,description}=props.api;
               <li><strong>Humidity </strong></li>
               <li> {humidity}%</li>
               <li><strong>Pressure</strong></li>
-              <li> {pressure}%</li>
+              <li> {pressure}</li>
             </ul>
             
            </main>
